@@ -29,7 +29,7 @@ document.querySelector('#search').addEventListener('submit', async(event) => {
         })
     } else {
         document.querySelector('#weather').classList.remove('show')
-        showLert(`Não foi possivel localizar... <img src="previsaoTempo/src/img/404.png" >`)
+        showLert(`Não foi possivel localizar... <img src="src/img/404.png">`)
         
     }
 })
