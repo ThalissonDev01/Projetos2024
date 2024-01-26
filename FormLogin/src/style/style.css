@@ -190,3 +190,21 @@ h2 {
 .sign-link p a:hover {
     text-decoration: underline;
 }
+
+/* Validação de Formulario */
+.input-group a {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    visibility: hidden;
+}
+
+.input-group.error input {
+    border-color: #ff3b25;
+}
+
+.input-group.error a {
+    color: #ff3b25;
+    text-decoration: none;
+    visibility: visible;
+}
