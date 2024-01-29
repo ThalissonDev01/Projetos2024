@@ -12,6 +12,7 @@ body {
     justify-content: center;
     background: linear-gradient(108deg, #313880 0%, #080b23 100%);
     position: relative;
+    overflow: hidden;
 }
 
 h4 {
