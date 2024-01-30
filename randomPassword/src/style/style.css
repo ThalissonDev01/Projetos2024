@@ -73,3 +73,141 @@ button {
     width: 270px;
     border-radius: 5px
 }
+
+#successCopy {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.success {
+    background: #fff;
+    color: #333;
+    font-weight: 500;
+    width: 400px;
+    height: 80px;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transform: translatex(100%);
+    animation: moveleft 0.5s linear forwards;
+}
+
+@keyframes moveleft {
+    100%{
+        transform: translatex(0);
+    }
+}
+
+.success i {
+    margin: 0 20px;
+    font-size: 35px;
+    color: #019f55;
+}
+
+.success::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: #019f55;
+    animation: anim 3s linear forwards;
+}
+
+@keyframes anim {
+    100% {
+        width: 0;
+    }
+}
+
+/* ============ Media Query ============*/
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 4rem;
+
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    input {
+        font-size: 1.2rem;
+        width: 450px;
+    }
+
+    .display {
+        width: 450px;
+    }
+
+    button {
+        width: 215px;
+        font-size: 16px;
+    }
+
+    .success {
+        width: 300px;
+    }
+
+    .success i {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 520px) {
+
+    body {
+        padding: 1rem;
+
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    input {
+        font-size: 1.0rem;
+        width: 250px;
+        padding: 15px;
+    }
+
+    .display {
+        width: 450px;
+    }
+
+    .display .copy {
+        right: 210px;
+        font-size: 24px;
+    }
+
+    button {
+        width: 150px;
+        height: 50px;
+        font-size: 10px;
+    }
+
+    .success {
+        width: 200px;
+        height: 60px;
+    }
+
+    .success i {
+        font-size: 25px;
+    }
+
+}
