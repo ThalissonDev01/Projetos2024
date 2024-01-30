@@ -13,6 +13,16 @@ function gerarsenha() {
     passwordBox.value = password;
 }
 
+// function copiarSenha() {
+//     passwordBox.select();
+//     document.execCommand('copy')
+// }
 
+function copiarSenha() {
 
+    if (passwordBox) {
+        passwordBox.select();
 
+        navigator.clipboard.writeText(passwordBox.value);
+    }
+}
